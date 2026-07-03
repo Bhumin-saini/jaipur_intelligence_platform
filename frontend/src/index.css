@@ -1,0 +1,18 @@
+@import 'leaflet/dist/leaflet.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Leaflet CSS — must be imported here */
+
+
+body {
+  background: #0f172a;
+  color: #f1f5f9;
+  font-family: 'Inter', system-ui, sans-serif;
+  margin: 0;
+}
+
+.leaflet-container { background: #1e293b !important; }
+.leaflet-tile { filter: brightness(0.75) saturate(0.85); }
+.leaflet-control-attribution { font-size: 10px !important; }

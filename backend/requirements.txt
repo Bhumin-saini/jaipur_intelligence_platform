@@ -1,0 +1,38 @@
+# ── Web framework ─────────────────────────────────────────────
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+
+# ── Scheduling ───────────────────────────────────────────────
+apscheduler==3.10.4
+
+# ── HTTP clients ─────────────────────────────────────────────
+httpx==0.27.0
+
+# ── Scraping ─────────────────────────────────────────────────
+feedparser==6.0.11
+beautifulsoup4==4.12.3
+lxml==5.2.1
+
+# ── Config ───────────────────────────────────────────────────
+python-dotenv==1.0.1
+
+# ── AstraDB (v2) ─────────────────────────────────────────────
+astrapy==1.5.2
+
+# ── Embeddings (v2) ──────────────────────────────────────────
+google-generativeai==0.7.2
+
+# ── Analysis (v2) ────────────────────────────────────────────
+numpy==1.26.4
+scikit-learn==1.4.2
+
+# ── Embedding fallback (offline mode) ─────────────────────────
+# Uncomment if Gemini API is unavailable:
+# sentence-transformers==2.7.0
+
+# ── v3: Additional dependencies ───────────────────────────────
+pydantic==2.7.1
+
+# ── ADR-003: Persistent APScheduler job store ─────────────────
+# Required for SQLAlchemyJobStore — scheduler survives restarts.
+sqlalchemy>=2.0
